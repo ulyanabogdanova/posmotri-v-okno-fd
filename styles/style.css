@@ -31,6 +31,8 @@ ol {
   display: flex;
   inline-size: 1200px;
   block-size: 100%;
+  align-items: center;
+  justify-content: center;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -40,6 +42,7 @@ ol {
 
 .content {
   display: flex;
+  place-items: end;
   gap: 30px;
   margin: 0 30px;
   inline-size: 100%;
@@ -65,12 +68,10 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  margin-top: 133px;
   flex: 1;
   width: 100%;
   height: 100%;
   gap: 26px;
-
 }
 
 .result__video-container {
@@ -78,8 +79,6 @@ ol {
   width: 711px;
   height: 386px;
   margin: 0 0 11px;
-  margin-top: 211px;
-  
 }
 
 .result__video {
@@ -92,8 +91,8 @@ ol {
 .content__list-item {
   display: flex;
   flex-direction: column;
-  /*gap: 30px;
-  margin-top: -30px;*/
+  /* gap: 30px;
+  margin-top: -30px; */
   padding-left: 3px;
   padding-right: 3px;
 }
@@ -102,7 +101,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-top: 26px;
+  padding-top: 2px;
 }
 
 .content__video-card {
@@ -131,11 +130,10 @@ ol {
   font-style: normal;
   line-height: 22px;
   color: #ffffff;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .title {
-  padding: 0 0 26px;
   color: #ffffff;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -177,7 +175,6 @@ ol {
   padding: 0 2px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 700;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -264,7 +261,8 @@ ol {
   opacity: 0;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked
+  + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
 
@@ -362,3 +360,4 @@ ol {
 .content__list-container {
   position: relative;
 }
+
